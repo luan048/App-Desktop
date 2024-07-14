@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0074fadf6f.js" crossorigin="anonymous"></script>
+    <title>Meu App Electron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="messageSucessfully" class="messageSucessfully">
+            <p>Enviado com Sucesso</p>
+        </div>
+
+        <div class="form">
+            <h1>Olá, Novo Usuário</h1>
+            <div class="bodyForm">
+                <p>Este é o meu aplicativo de desktop usando Electron</p>
+                <p>Your name: </p>
+                <input type="text" id="inputName" class="inputName" placeholder="Name">
+                <p>Password</p>
+                <input type="password" id="inputPassword" class="inputPassword" placeholder="Ex: 123456"><i onclick="visibilityPassword()" id="eye-slash" class="fa-solid fa-eye-slash"></i>
+                <button class="button" onclick="messageSucessfully()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
